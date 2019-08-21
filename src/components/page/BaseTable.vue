@@ -246,6 +246,7 @@ export default {
     },
     // 编辑操作
     handleEdit (index, row) {
+      console.log(index,row);
       this.idx = index;
       this.id = row.id;
       this.form = row;
