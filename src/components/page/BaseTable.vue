@@ -187,8 +187,10 @@ export default {
     this.getData();
   },
   computed: {
+    
     data () {
       return this.tableData.filter(d => {
+  
         let is_del = false;
         for (let i = 0; i < this.delList.length; i++) {
           if (d.name === this.delList[i].name) {
